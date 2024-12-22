@@ -35,6 +35,9 @@ nav a:hover {
 
 .content {
     padding: 20px;
+    padding-bottom: 60px; /* Afastando o conteúdo do rodapé */
+      
+      
 }
 
 footer {
