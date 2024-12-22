@@ -46,11 +46,7 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.content h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: left; /* Garantindo que o título h2 fique alinhado à esquerda */
-}
+
 
 .content h3 {
     font-size: 1.6em;
@@ -62,7 +58,7 @@ nav a:hover {
     font-size: 1.2em;
     line-height: 1.6;
     text-align: left; /* Alinhamento padrão para os parágrafos */
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 footer {
