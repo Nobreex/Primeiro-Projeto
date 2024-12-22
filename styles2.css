@@ -1,0 +1,102 @@
+/* Estilos gerais para o corpo da página */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página com a classe 'contato' */
+body.contato {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+}
+
+/* Container central para o conteúdo */
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px; /* Diminuímos a largura máxima da caixa */
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da seção */
+h1 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo de descrição */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Estilos do formulário de contato */
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Estilo do botão de envio */
+button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+}
