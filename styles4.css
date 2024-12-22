@@ -144,8 +144,8 @@ nav a:hover {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px 0; /* Diminui o padding (tamanho vertical) */
-    font-size: 0.9em; /* Reduz o tamanho da fonte */
+    padding: 7px ; /* Diminui o padding (tamanho vertical) */
+    font-size: 1em; /* Reduz o tamanho da fonte */
     width: 100%;
     margin-top: auto; /* Adiciona margem superior para empurrar o rodapé para baixo */
 }
