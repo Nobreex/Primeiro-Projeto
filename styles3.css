@@ -40,7 +40,7 @@ nav a:hover {
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Alinhamento à esquerda do conteúdo */
     padding: 40px 15px;
     max-width: 800px;
     margin: 0 auto;
@@ -49,12 +49,19 @@ nav a:hover {
 .content h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: left; /* Garantindo que o título h2 fique alinhado à esquerda */
+}
+
+.content h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhando os subtítulos h3 à esquerda */
 }
 
 .content p {
     font-size: 1.2em;
     line-height: 1.6;
-    text-align: justify;
+    text-align: left; /* Alinhamento padrão para os parágrafos */
     margin-bottom: 30px;
 }
 

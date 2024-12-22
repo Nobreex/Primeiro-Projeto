@@ -1,102 +1,70 @@
-/* Estilos gerais para o corpo da página */
-body, html {
+/* Reseta margens e padding de todos os elementos */
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Corpo da página com a classe 'contato' */
-body.contato {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    background-color: #f9f9f9; /* Cor de fundo suave */
-    color: #333; /* Cor do texto */
-}
-
-/* Container central para o conteúdo */
-.container {
+header {
+    background-color: #3498db;
+    color: white;
     text-align: center;
     padding: 20px;
-    max-width: 400px; /* Diminuímos a largura máxima da caixa */
-    width: 100%;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Título da seção */
-h1 {
-    color: #3498db;
-    margin-bottom: 10px;
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
-/* Parágrafo de descrição */
-p {
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
     font-size: 1.1em;
-    margin-bottom: 20px;
-    color: #555;
+    transition: color 0.3s;
 }
 
-/* Estilos do formulário de contato */
-.form-contato {
+nav a:hover {
+    color: #3498db;
+}
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 15px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.campo {
-    width: 100%;
-    margin-bottom: 15px;
-    text-align: left;
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 30px;
+    text-indent: 20px;
 }
 
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1em;
-}
-
-textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-/* Estilo do botão de envio */
-button {
-    padding: 12px 20px;
-    background-color: #3498db;
+footer {
+    background-color: #333;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-    .container {
-        padding: 15px;
-        width: 90%;
-    }
-    
-    h1 {
-        font-size: 1.5em;
-    }
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
